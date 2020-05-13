@@ -3,24 +3,24 @@ source 'https://rubygems.org'
 ruby "2.3.0"
 
 
-gem 'rails', '4.2.5.2'
+gem 'rails', '5.0.0'
 gem 'pg', '~> 0.18.4'
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 5.0', '>= 5.0.5'
 gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.1.0'
-gem 'jquery-rails'
+gem 'coffee-rails', '~> 4.1.1'
+gem 'jquery-rails', '>= 4.2.1'
 
-gem 'jquery-ui-rails'
+gem 'jquery-ui-rails', '>= 5.0.5'
 gem 'jtable-rails4', '~> 0.1.1'
 # gem "jtable-rails4", :path => "/home/david/webdev/jtable-rails4"
 
-gem 'turbolinks'
+gem 'turbolinks', '>= 2.5.3'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # DBR: https://www.railstutorial.org/book/filling_in_the_layout
 gem 'bootstrap-sass'
 #gem 'bootstrap-will_paginate'
-gem 'kaminari'
+gem 'kaminari', '>= 0.16.3'
 gem 'api-pagination'
 
 gem 'paperclip'
@@ -30,9 +30,9 @@ gem 'aws-sdk-v1' # Needed as per (otherwise errors): http://ruby.awsblog.com/pos
 gem 'aws-sdk'
 gem 'delayed_job_active_record'
 gem 'daemons' # for start/stop/restart delayed_job
-gem 'sextant', :group => :development # to show routes in browser localhost:3000/rails/routes
+gem 'sextant', '>= 0.2.4', :group => :development # to show routes in browser localhost:3000/rails/routes
 
-gem 'devise'
+gem 'devise', '>= 4.0.0'
 
 # DBR: cors needed as have API and separate app. Getting errors
 # when doing ajax requests across different domains.
@@ -53,7 +53,7 @@ group :development, :test do
   gem 'spring'
 
   gem 'minitest-reporters'
-  gem 'mini_backtrace'
+  gem 'mini_backtrace', '>= 0.1.3'
   gem 'guard' # without this you get an error when running tests. See https://github.com/guard/guard-minitest#install
   gem 'guard-minitest'
 
@@ -62,7 +62,7 @@ end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 3.0'
+  gem 'web-console', '~> 3.1', '>= 3.1.1'
  
 end
 
