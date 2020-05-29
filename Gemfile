@@ -20,7 +20,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # DBR: https://www.railstutorial.org/book/filling_in_the_layout
 gem 'bootstrap-sass'
 #gem 'bootstrap-will_paginate'
-gem 'kaminari'
+gem 'kaminari', '>= 1.2.1'
 gem 'api-pagination'
 
 gem 'paperclip'
