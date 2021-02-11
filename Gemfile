@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 ruby "2.3.0"
 
 
-gem 'rails', '4.2.5.2'
+gem 'rails', '6.0.3.5'
 gem 'pg', '~> 0.18.4'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
@@ -30,7 +30,7 @@ gem 'aws-sdk-v1' # Needed as per (otherwise errors): http://ruby.awsblog.com/pos
 gem 'aws-sdk'
 gem 'delayed_job_active_record'
 gem 'daemons' # for start/stop/restart delayed_job
-gem 'sextant', :group => :development # to show routes in browser localhost:3000/rails/routes
+gem 'sextant', '>= 0.2.4', :group => :development # to show routes in browser localhost:3000/rails/routes
 
 gem 'devise'
 
@@ -53,7 +53,7 @@ group :development, :test do
   gem 'spring'
 
   gem 'minitest-reporters'
-  gem 'mini_backtrace'
+  gem 'mini_backtrace', '>= 0.1.3'
   gem 'guard' # without this you get an error when running tests. See https://github.com/guard/guard-minitest#install
   gem 'guard-minitest'
 
