@@ -15,7 +15,7 @@ gem 'jtable-rails4', '~> 0.1.1'
 # gem "jtable-rails4", :path => "/home/david/webdev/jtable-rails4"
 
 gem 'turbolinks'
-gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'sdoc', '~> 1.0.0', group: :doc
 
 # DBR: https://www.railstutorial.org/book/filling_in_the_layout
 gem 'bootstrap-sass'
