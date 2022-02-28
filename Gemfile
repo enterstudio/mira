@@ -5,9 +5,9 @@ ruby "2.3.0"
 
 gem 'rails', '4.2.5.2'
 gem 'pg', '~> 0.18.4'
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 5.0', '>= 5.0.4'
 gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.1.0'
+gem 'coffee-rails', '~> 4.1.1'
 gem 'jquery-rails'
 
 gem 'jquery-ui-rails'
@@ -62,7 +62,7 @@ end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 3.0'
+  gem 'web-console', '~> 3.1', '>= 3.1.1'
  
 end
 
