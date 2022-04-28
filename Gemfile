@@ -3,11 +3,11 @@ source 'https://rubygems.org'
 ruby "2.3.0"
 
 
-gem 'rails', '4.2.5.2'
+gem 'rails', '5.2.7.1'
 gem 'pg', '~> 0.18.4'
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 5.0', '>= 5.0.5'
 gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.1.0'
+gem 'coffee-rails', '~> 4.2.2'
 gem 'jquery-rails'
 
 gem 'jquery-ui-rails'
@@ -32,7 +32,7 @@ gem 'delayed_job_active_record'
 gem 'daemons' # for start/stop/restart delayed_job
 gem 'sextant', :group => :development # to show routes in browser localhost:3000/rails/routes
 
-gem 'devise'
+gem 'devise', '>= 4.4.2'
 
 # DBR: cors needed as have API and separate app. Getting errors
 # when doing ajax requests across different domains.
@@ -62,7 +62,7 @@ end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 3.0'
+  gem 'web-console', '~> 3.1', '>= 3.1.1'
  
 end
 
