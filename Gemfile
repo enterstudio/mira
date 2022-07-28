@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 ruby "2.3.0"
 
 
-gem 'rails', '4.2.5.2'
+gem 'rails', '5.2.8.1'
 gem 'pg', '~> 0.18.4'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
@@ -28,7 +28,7 @@ gem 'delayed_paperclip'
 
 gem 'aws-sdk-v1' # Needed as per (otherwise errors): http://ruby.awsblog.com/post/TxFKSK2QJE6RPZ/Upcoming-Stable-Release-of-AWS-SDK-for-Ruby-Version-2
 gem 'aws-sdk'
-gem 'delayed_job_active_record'
+gem 'delayed_job_active_record', '>= 4.1.3'
 gem 'daemons' # for start/stop/restart delayed_job
 gem 'sextant', :group => :development # to show routes in browser localhost:3000/rails/routes
 
