@@ -3,41 +3,41 @@ source 'https://rubygems.org'
 ruby "2.3.0"
 
 
-gem 'rails', '4.2.5.2'
+gem 'rails', '6.1.7.3'
 gem 'pg', '~> 0.18.4'
-gem 'sass-rails', '~> 5.0'
-gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.1.0'
-gem 'jquery-rails'
+gem 'sass-rails', '~> 6.0', '>= 6.0.0'
+gem 'uglifier', '>= 2.7.2'
+gem 'coffee-rails', '~> 4.2.2'
+gem 'jquery-rails', '>= 4.4.0'
 
-gem 'jquery-ui-rails'
+gem 'jquery-ui-rails', '>= 6.0.0'
 gem 'jtable-rails4', '~> 0.1.1'
 # gem "jtable-rails4", :path => "/home/david/webdev/jtable-rails4"
 
-gem 'turbolinks'
-gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'turbolinks', '>= 5.0.0'
+gem 'sdoc', '~> 1.0.0', group: :doc
 
 # DBR: https://www.railstutorial.org/book/filling_in_the_layout
-gem 'bootstrap-sass'
+gem 'bootstrap-sass', '>= 3.4.0'
 #gem 'bootstrap-will_paginate'
-gem 'kaminari'
+gem 'kaminari', '>= 1.2.1'
 gem 'api-pagination'
 
-gem 'paperclip'
+gem 'paperclip', '>= 5.2.1'
 gem 'delayed_paperclip'
 
 gem 'aws-sdk-v1' # Needed as per (otherwise errors): http://ruby.awsblog.com/post/TxFKSK2QJE6RPZ/Upcoming-Stable-Release-of-AWS-SDK-for-Ruby-Version-2
 gem 'aws-sdk'
-gem 'delayed_job_active_record'
+gem 'delayed_job_active_record', '>= 4.1.5'
 gem 'daemons' # for start/stop/restart delayed_job
 gem 'sextant', :group => :development # to show routes in browser localhost:3000/rails/routes
 
-gem 'devise'
+gem 'devise', '>= 4.7.1'
 
 # DBR: cors needed as have API and separate app. Getting errors
 # when doing ajax requests across different domains.
-gem 'rack-cors', :require => 'rack/cors'
-gem 'yajl-ruby' # ?not sure needed anymore? faster JSON backends. See https://github.com/rails/jbuilder#faster-json-backends
+gem 'rack-cors', '>= 1.0.5', :require => 'rack/cors'
+gem 'yajl-ruby' , '>= 1.4.2' # ?not sure needed anymore? faster JSON backends. See https://github.com/rails/jbuilder#faster-json-backends
 
 gem 'therubyracer'
 
@@ -62,7 +62,7 @@ end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 3.0'
+  gem 'web-console', '~> 3.1', '>= 3.1.1'
  
 end
 
