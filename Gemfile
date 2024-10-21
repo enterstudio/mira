@@ -3,9 +3,9 @@ source 'https://rubygems.org'
 ruby "2.3.0"
 
 
-gem 'rails', '4.2.5.2'
+gem 'rails', '7.0.0'
 gem 'pg', '~> 0.18.4'
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 6.0', '>= 6.0.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
@@ -14,13 +14,13 @@ gem 'jquery-ui-rails'
 gem 'jtable-rails4', '~> 0.1.1'
 # gem "jtable-rails4", :path => "/home/david/webdev/jtable-rails4"
 
-gem 'turbolinks'
+gem 'turbolinks', '>= 5.0.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # DBR: https://www.railstutorial.org/book/filling_in_the_layout
 gem 'bootstrap-sass'
 #gem 'bootstrap-will_paginate'
-gem 'kaminari'
+gem 'kaminari', '>= 1.0.0'
 gem 'api-pagination'
 
 gem 'paperclip'
